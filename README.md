@@ -1,12 +1,11 @@
-<p align="center"><img src=".github/logo.png" width="350" alt="FreelanceHours Logo"></a></p>
+<div align="center"><img src=".github/logo.png" width="350" alt="FreelanceHours Logo"></div>
 
-<p align="center">
-  <img alt="PHP version" src="https://img.shields.io/static/v1?label=php&message=8.2&color=18181B&labelColor=5354FD">
-  <img alt="Laravel version" src="https://img.shields.io/static/v1?label=laravel&message=11.9&color=18181B&labelColor=5354FD">
+<div align="center">
+  <img alt="PHP version" src="https://img.shields.io/static/v1?label=php&message=8.4&color=18181B&labelColor=5354FD">
+  <img alt="Laravel version" src="https://img.shields.io/static/v1?label=laravel&message=12&color=18181B&labelColor=5354FD">
+</div>
 
-  ## FreelanceHours
-</p>
-
+#
 FreelanceHours é uma aplicação desenvolvida em PHP, Laravel e Livewire, onde freelancers podem enviar propostas de horas que podem contribuir em determinado projeto.
 
 <br>
@@ -15,9 +14,24 @@ FreelanceHours é uma aplicação desenvolvida em PHP, Laravel e Livewire, onde 
   <img alt="Preview do projeto desenvolvido." src=".github/preview.png" width="80%">
 </p>
 
-## Tecnologias utilizadas
+## 📦 Instalação
+```bash
+# Clonar repositório
+git clone https://github.com/lucas-bardeli/freelance-hours.git
+
+# Entrar na pasta
+cd freelance-hours
+
+# Instalar dependências PHP
+composer install
+
+# Instalar dependências Node
+npm install
+```
+
+## 🛠️ Tecnologias utilizadas
 
 - [**PHP**](https://www.php.net/): Linguagem de programação usada;
 - [**Laravel**](https://laravel.com/): Framework PHP utilizado para a estrutura e organização do projeto;
 - [**Livewire**](https://laravel-livewire.com/): Utilizado para criar interfaces dinâmicas e reativas sem sair do Laravel;
-- [**Tailwind**](https://tailwindcss.com/): Framework CSS que facilita o desenvolvimento de interfaces modernas e responsivas.
+- [**Tailwind CSS**](https://tailwindcss.com/): Framework CSS que facilita o desenvolvimento de interfaces modernas e responsivas.
