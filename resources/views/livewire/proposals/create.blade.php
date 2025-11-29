@@ -1,0 +1,2 @@
+
+<x-proposals.form />
