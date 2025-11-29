@@ -4,10 +4,7 @@
     <div class="flex items-start justify-between pb-4">
         <div class="flex flex-col gap-4">
             <div>
-                <span
-                    class="bg-[#C0F7B4] text-[#1D8338] rounded-full font-bold text-center uppercase py-1.5 px-3.5 text-[12px] tracking-wide ">
-                    {{ $project->status->label() }}
-                </span>
+                <x-projects.status :status="$project->status" />
             </div>
             <h1 class="text-[28px] text-white leading-9">
                 {{ $project->title }}
@@ -43,8 +40,7 @@
         <div class="uppercase font-bold text-[#8C8C9A] text-[12px]">Tecnologias</div>
         <div class="flex gap-2 items-center pb-2">
             @foreach ($project->tech_stack as $tech)
-                {{ $tech }}
-                {{-- <x-ui.tech :icon="$tech->icon" :text="$tech->text" /> --}}
+                <x-ui.tech :icon="$tech" :text="$tech" />
             @endforeach
         </div>
     </div>
