@@ -11,7 +11,7 @@
         </ul>
 
         <div class="flex items-center gap-4">
-            <x-ui.icons.profile class="w-8 h-8" />
+            <img src="https://avatar.iran.liara.run/public" class="w-10">
             <x-ui.icons.burguer class="w-8 h-8" />
         </div>
     </div>
