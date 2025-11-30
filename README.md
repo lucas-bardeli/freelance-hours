@@ -27,6 +27,24 @@ composer install
 
 # Instalar dependências Node
 npm install
+
+# Criar arquivo de ambiente - copia o template
+cp .env.example .env
+
+# Gerar chave da aplicação
+php artisan key:generate
+
+# Rodar as migrations
+php artisan migrate
+
+# Rodar a seeder para alimentar o banco com dados falsos
+php artisan db:seed
+
+# Iniciar o servidor
+php artisan serve
+
+# Compilar assets do front-end automaticamente
+npm run dev
 ```
 
 ## 🛠️ Tecnologias utilizadas

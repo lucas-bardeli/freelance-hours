@@ -4,6 +4,7 @@ namespace App\Livewire\Projects;
 
 use App\Models\Project;
 use Livewire\Attributes\Computed;
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 class Proposals extends Component
@@ -15,7 +16,7 @@ class Proposals extends Component
     #[Computed()]
     public function proposals()
     {
-        return $this->project->proposals()->orderByDesc('hours')->paginate($this->qtd);
+        return $this->project->proposals()->orderBy('hours')->paginate($this->qtd);
     }
 
     #[Computed()]
@@ -29,6 +30,7 @@ class Proposals extends Component
         $this->qtd += 7;
     }
 
+    #[On('proposal::created')]
     public function render()
     {
         return view('livewire.projects.proposals');
