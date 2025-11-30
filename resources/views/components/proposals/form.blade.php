@@ -16,25 +16,42 @@
             <div class="flex gap-4">
                 <div class="w-2/3 gap-2 flex flex-col">
                     <label for="email" class="text-[14px] text-[#C3C3D1]">E-mail</label>
-                    <input type="email" wire:model="email" id="email"
-                        class="w-full bg-[#1E1E2C] text-white p-2 focus:outline-none focus:ring-0 border border-[#1E1E2C]"
+
+                    <input type="email" id="email" wire:model="email"
+                        class="w-full bg-[#1E1E2C] text-white px-3 py-2.5 rounded-md border border-[#2A2A3A]
+                            focus:outline-none focus:ring-2 focus:ring-[#5354FD]/40 focus:border-[#5354FD]
+                            transition duration-200 placeholder:text-[#6D6D7D]"
                         placeholder="Insira o seu e-mail" />
+
                     @error('email')
                         <p class="text-red-600 mt-1 text-sm">{{ $message }}</p>
                     @enderror
                 </div>
                 <div class="w-1/3 gap-2 flex flex-col">
                     <label class="text-[14px] text-[#C3C3D1]">Horas</label>
-                    <div class="flex" x-data="{ hours: @entangle('hours') }">
+
+                    <div x-data="{ hours: @entangle('hours') }"
+                        class="flex items-center bg-[#1E1E2C] rounded-md border border-[#2A2A3A] ">
+
                         <button type="button"
-                            class="bg-[#1E1E2C] hover:bg-[#313145] transition duration-300 ease-in-out text-[#C3C3D1] py-2 px-3 text-3xl"
-                            @click="hours--">-</button>
+                            class="px-3.25 py-2 bg-[#1E1E2C] text-[#C3C3D1] hover:bg-[#2A2A3A]
+                                   transition duration-200 text-xl"
+                            @click="hours--">
+                            -
+                        </button>
+
                         <input wire:model="hours" type="number"
-                            class="bg-[#1E1E2C] text-white py-2 pl-3 w-10 font-bold focus:outline-none focus:ring-0 border border-[#1E1E2C] focus:ring-blue-500" />
+                            class="w-14 bg-transparent text-white text-center font-bold focus:outline-none
+                                   focus:ring-0 text-lg" />
+
                         <button type="button"
-                            class="bg-[#1E1E2C] hover:bg-[#313145] transition duration-300 ease-in-out text-[#C3C3D1] py-2 px-3 text-3xl"
-                            @click="hours++">+</button>
+                            class="px-3 py-2 bg-[#1E1E2C] text-[#C3C3D1] hover:bg-[#2A2A3A]
+                                   transition duration-200 text-xl"
+                            @click="hours++">
+                            +
+                        </button>
                     </div>
+
                     @error('hours')
                         <p class="text-red-600 mt-1 text-sm">{{ $message }}</p>
                     @enderror
