@@ -1,9 +1,9 @@
 <div align="center"><img src="public/assets/logo.png" width="350" alt="FreelanceHours Logo"></div>
 
-<div align="center">
-  <img alt="PHP version" src="https://img.shields.io/static/v1?label=php&message=8.4&color=18181B&labelColor=5354FD">
+<h3 align="center">
+  <img alt="PHP version" src="https://img.shields.io/static/v1?label=php&message=8.4&color=18181B&labelColor=5354FD"> &nbsp;
   <img alt="Laravel version" src="https://img.shields.io/static/v1?label=laravel&message=12&color=18181B&labelColor=5354FD">
-</div>
+</h3>
 
 #
 FreelanceHours é uma aplicação desenvolvida em PHP, Laravel e Livewire, onde freelancers podem enviar propostas de horas que podem contribuir em determinado projeto.
